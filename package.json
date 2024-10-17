@@ -10,8 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.2.2",
     "@uiw/react-codemirror": "^4.23.5",
     "bootstrap": "^5.3.3",
+    "codemirror": "^6.0.1",
     "next": "15.0.0-rc.1",
     "react": "19.0.0-rc-cd22717c-20241013",
     "react-bootstrap": "^2.10.5",
