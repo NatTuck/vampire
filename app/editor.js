@@ -11,6 +11,10 @@ import Card from 'react-bootstrap/Card';
 import { runCode } from './render';
 
 const text0 = `
+function onInit() {
+  return { tick: 0 };
+}
+
 function onDraw(state) {
 
 }

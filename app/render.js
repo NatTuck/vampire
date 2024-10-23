@@ -54,7 +54,12 @@ function renderMain() {
 }
 
 export function runCode(code) {
-
+  try {
+    eval(code);
+  }
+  catch (err) {
+    console.log("code error:", err);
+  }
 }
 
 // let tick = 0;
