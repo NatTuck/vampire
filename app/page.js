@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import Editor from './editor';
+import Viz from './viz';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </Col>
       <Col>
         <h1>Output</h1>
+        <Viz />
       </Col>
     </Row>
   );

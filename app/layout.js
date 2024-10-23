@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Container>
+        <Container fluid>
           {children}
         </Container>
       </body>
