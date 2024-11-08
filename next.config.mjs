@@ -11,4 +11,9 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
 };
+
+export const serverRuntimeConfig = {
+  projectRoot: __dirname,
+};
+
 export default nextConfig;

@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import CodeMirror from '@uiw/react-codemirror';
 import { basicSetup } from '@uiw/codemirror-extensions-basic-setup';
 import { javascript } from '@codemirror/lang-javascript';
@@ -10,34 +11,15 @@ import Card from 'react-bootstrap/Card';
 
 import { runCode } from './render';
 
-const text0 = `
-function onInit() {
-  return { tick: 0 };
-}
-
-function onDraw(state) {
-
-}
-
-function onTick() {
-
-}
-
-function onClick() {
-
-}
-
-function onKey() {
-
-}
-`;
-
 export default function Editor() {
-  const [code, setCode] = React.useState(text0);
+  const code = useSelector((state) => state.code);
+  const dispatch = useDispatch();
+
   const onChange = React.useCallback((code1, viewUpdate) => {
     console.log('code:', code1);
-    setCode(code1);
+    dispatch({type: 'set-code', data: code1});
   }, []);
+
   return (
     <Card>
       <Card.Body>

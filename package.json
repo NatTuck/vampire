@@ -18,6 +18,8 @@
     "react": "19.0.0-rc-cd22717c-20241013",
     "react-bootstrap": "^2.10.5",
     "react-dom": "19.0.0-rc-cd22717c-20241013",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
     "sass": "^1.80.1"
   },
   "devDependencies": {
